@@ -36,16 +36,16 @@ public class platformBehaviour : MonoBehaviour
         {
             toRight = false;
             clon2 = Instantiate(cylinder);
-            //Destroy(clon2, 1);
             clon2.transform.position = baseDer.transform.position + new Vector3(0,5,0);
+            Destroy(clon2, 1);
         }
 
-        if(transform.position.x < baseIzq.transform.position.x + 1)
+        if (transform.position.x < baseIzq.transform.position.x + 1)
         {
             toRight = true;
             clon = Instantiate(sphere);
-            //Destroy(clon, 1);
             clon.transform.position = baseIzq.transform.position + new Vector3(0,5, 0);
+            Destroy(clon, 1);
 
         }
 
